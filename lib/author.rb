@@ -15,4 +15,8 @@ class Author
     self.add_post(Post.new(post_title))
   end
 
+  def self.post_count
+    Post.all.size
+  end
+
 end
